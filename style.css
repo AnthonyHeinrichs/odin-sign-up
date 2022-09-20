@@ -27,7 +27,7 @@ p h2 {
   background-image: url('./public/dog.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 
@@ -109,7 +109,7 @@ a {
 
 .wrapper .box label {
   color: rgb(119, 119, 119);
-  font-size: calc(10px + 0.65vw);
+  font-size: calc(10px + 0.5vw);
   font-weight: 700;
 }
 
@@ -131,7 +131,17 @@ a {
 .wrapper .box input:focus {
   padding: 20px 10px;
   margin-top: 10px;
-  background: rgb(255, 233, 188);
+  background: rgb(255, 250, 238);
+  border: 2px solid rgb(160, 1, 1);
+  border-radius: 5px;
+}
+
+.wrapper .box input:valid {
+  padding: 20px 10px;
+  margin-top: 10px;
+  background: rgb(255, 250, 238);
+  border: 2px solid rgb(64, 226, 46);
+  border-radius: 5px;
 }
 
 .input {
@@ -143,12 +153,17 @@ a {
   margin-left: 48px;
   margin-top: 48px;
   border-radius: 10px;
-  color: rgb(255, 250, 238);
+  color: white;
   font-weight: 700;
   border-style: none;
-  background-color: #EDB506;
+  background-color: #997300;
   padding: 15px 30px 15px 30px;
   max-width: 300px;
+}
+
+.button:active {
+  vertical-align: top;
+  padding: 8px 13px 6px;
 }
 
 .accountAlready {
@@ -161,4 +176,14 @@ a {
 
 .login {
   margin-top: 15px;
+}
+
+footer {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+}
+
+.icon {
+  margin-left: 6px;
 }
